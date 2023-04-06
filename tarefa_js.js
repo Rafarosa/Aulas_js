@@ -31,8 +31,21 @@ let anoNascimento = 1999
 let minhaIdade = idadeFinalAno(anoNascimento);
 console.info(`Idade ao final do ano ${anoNascimento}: ${minhaIdade}`)
 
-//3 - Crie uma função que recebe como parâmetro  o nome, e o ano de nascimento de uma pessoa e diga quantos anos ela vai ter até o fim deste ano. Além disso, retorne um objeto contendo os atributos nome e idade.
+//3 - Crie uma função que recebe como parâmetro  o nome, e o ano de nascimento de uma pessoa e diga quantos anos ela vai ter até o fim deste ano. 
+//Além disso, retorne um objeto contendo os atributos nome e idade.
+function criaPessoa(nome, anoNascimento) {
+    let idadeFinal = idadeFinalAno(anoNascimento)
+    
+    console.info(`${nome} terá até o final do ano ${idadeFinal} de idade!`)
 
+    return {
+        nome: nome,
+        idade: idadeFinal,
+    }
+}
+
+let joao = criaPessoa('João', 1980)
+console.info(joao.nome, joao.idade)
 
 //4 - Escreva uma função que transforma uma string em minúscula (sem utilizar nenhum método)
 
