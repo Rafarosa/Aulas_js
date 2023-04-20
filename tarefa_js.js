@@ -35,7 +35,7 @@ console.info(`Idade ao final do ano ${anoNascimento}: ${minhaIdade}`)
 //Além disso, retorne um objeto contendo os atributos nome e idade.
 function criaPessoa(nome, anoNascimento) {
     let idadeFinal = idadeFinalAno(anoNascimento)
-    
+
     console.info(`${nome} terá até o final do ano ${idadeFinal} de idade!`)
 
     return {
@@ -49,4 +49,32 @@ console.info(joao.nome, joao.idade)
 
 //4 - Escreva uma função que transforma uma string em minúscula (sem utilizar nenhum método)
 
-//5 - Crie uma função que receba um número como parâmetro e retorne o próximo múltiplo de 3.
+function convertStringminusculo(palavra) {
+
+    let textoMinusculo = palavra.toLowerCase();
+
+    return textoMinusculo
+}
+
+let MostrarPalavra = convertStringminusculo('BANANA');
+console.info(`${MostrarPalavra}`)
+
+
+//function transformaMinuscula(string) {
+//    let resultado = '';
+//    for (let i = 0; i < string.length; i++) {
+//    let letra = string.charAt(i);
+//    let codigo = letra.charCodeAt(0);
+//    if (codigo >= 65 && codigo <= 90) { // se for maiúscula
+//    letra = String.fromCharCode(codigo + 32); // adiciona a diferença entre maiúscula e minúscula
+//    }
+//    resultado += letra;
+//    }
+//    return resultado;
+//    }
+//
+//    // exemplo de uso:
+//    let texto = 'ExEmPlO dE TeXtO';
+//    let resultado = transformaMinuscula(texto); // "exemplo de texto"
+
+//5 - Crie uma função que receba um número como parâmetro e retorne o próximo múltiplo de 3. n 
