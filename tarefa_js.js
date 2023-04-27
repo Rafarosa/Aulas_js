@@ -78,3 +78,19 @@ console.info(`${MostrarPalavra}`)
 //    let resultado = transformaMinuscula(texto); // "exemplo de texto"
 
 //5 - Crie uma função que receba um número como parâmetro e retorne o próximo múltiplo de 3. n 
+
+
+function proximoMultiploDe3(numero) {
+    // Calcula o resto da divisão por 3
+    const resto = numero % 3;
+    // Se o resto for zero, o número já é múltiplo de 3
+    if (resto === 0) {
+      return numero;
+    } else {
+      // Caso contrário, retorna o próximo múltiplo de 3
+      return numero + (3 - resto);
+    }
+  }
+const meuNumero = 14;
+const proximoMultiplo = proximoMultiploDe3(meuNumero);
+console.log(`O próximo múltiplo de 3 após ${meuNumero} é ${proximoMultiplo}`);
